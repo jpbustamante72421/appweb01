@@ -1,0 +1,96 @@
+/* ===================================================
+   PALETA DE COLORES: White, Off-White & Teal / Turquoise
+   =================================================== */
+:root {
+    --bg-main: #f8fafc;          /* Blanco roto / Gris muy claro */
+    --bg-card: #ffffff;          /* Blanco puro */
+    --text-primary: #0f172a;     /* Negro / Gris oscuro profundo */
+    --text-secondary: #475569;   /* Gris medio */
+    --accent-teal: #0d9488;      /* Turquesa elegante (Teal) */
+    --accent-teal-hover: #0f766e;/* Turquesa más oscuro para estados hover */
+    --border-light: #e2e8f0;     /* Gris claro para bordes sutiles */
+}
+
+/* 1. Estilos generales */
+body.minimal-body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    background-color: var(--bg-main);
+    color: var(--text-primary);
+    line-height: 1.6;
+}
+
+/* 2. Contenedor Principal */
+.minimal-main-container {
+    max-width: 920px;
+    margin: 40px auto;
+    background: var(--bg-card);
+    padding: 40px;
+    border-radius: 12px;
+    border: 1px solid var(--border-light);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.03);
+}
+
+/* 3. Barra de Navegación */
+.minimal-navbar {
+    background-color: var(--bg-card) !important;
+    border-bottom: 2px solid var(--border-light);
+    padding: 15px 10px;
+    margin-bottom: 35px;
+    box-shadow: none !important;
+}
+
+.minimal-brand {
+    font-weight: 700;
+    color: var(--accent-teal) !important;
+    letter-spacing: -0.5px;
+    font-size: 1.3rem;
+}
+
+.minimal-nav-link {
+    color: var(--text-secondary) !important;
+    font-weight: 500;
+    transition: all 0.2s ease-in-out;
+    padding: 8px 14px !important;
+    border-radius: 6px;
+}
+
+.minimal-nav-link:hover {
+    color: var(--accent-teal) !important;
+    background-color: #f1f5f9;
+}
+
+.minimal-nav-item.active .minimal-nav-link {
+    color: var(--accent-teal) !important;
+    font-weight: 600;
+}
+
+/* 4. Contenido y Tipografía */
+.minimal-content-container {
+    padding: 10px 0;
+}
+
+.minimal-title {
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--text-primary);
+    margin-bottom: 18px;
+    letter-spacing: -0.5px;
+    position: relative;
+}
+
+/* Detalle visual minimalista en el título */
+.minimal-title::after {
+    content: '';
+    display: block;
+    width: 40px;
+    height: 3px;
+    background-color: var(--accent-teal);
+    margin-top: 8px;
+    border-radius: 2px;
+}
+
+.minimal-text {
+    font-size: 1.05rem;
+    color: var(--text-secondary);
+    margin-bottom: 12px;
+}
