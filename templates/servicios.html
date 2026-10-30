@@ -1,7 +1,16 @@
 {% extends "layout.html" %}
-
 {% block content %}
+<div class="container">
     <h1 class="minimal-title">{{titulo}}</h1>
     <p class="minimal-text">{{mensaje}}</p>
     <p class="minimal-text">Estos son los servicios que ofrecemos.</p>
+        <div class="card" style="width: 18rem;">
+    <img src="{{ url_for('static', filename='css/img/produtos/gorras.jpg') }}" class="card-img-top" alt="...">
+    <div class="card-body">
+        <h5 class="card-title">Compra Gorras Aquí!!</h5>
+        <p class="card-text">Descubre nuestra amplia selección de gorras de alta calidad y de nuestras marcas favoritas. </p>
+        <a href="#" class="btn btn-primary">VMás Información</a>
+    </div>
+    </div>
+</div>
 {% endblock %}

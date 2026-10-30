@@ -2,6 +2,11 @@
 
 {% block content %}
             <h1 class="minimal-title">UDL-ICO</h1>
+            <div class="text-center">
+                <img src="{{ url_for('static', filename='css/img/muertos.png') }}"
+                alt="Imagen de ejemplo" class="img-fluid"
+                style="max-width: 300px; height: auto;">
+            </div>
             <p class="minimal-text">{{ mensaje }}</p>
             <p class="minimal-text">Esta es una pagina de ejemplo para mostrar como funciona Flask con plantillas HTML.</p>
 {% endblock %}
